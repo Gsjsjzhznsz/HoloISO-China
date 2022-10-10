@@ -5,7 +5,7 @@
 # ENGLISH Version
 Click [here](https://github.com/theVakhovskeIsTaken/holoiso) to access the English version.
 
-# HoloISO china
+# HoloISO China
 这是一个中文本地化的分支计划！
 计划将SteamOS 3 (Holo) 从语言到安装进行本地化适配,希望可以让大家更便捷的使用上SteamOS 3 (Holo)
 
@@ -31,14 +31,14 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 > 目前，只有在使用这些软件制作 [BalenaEtcher](https://www.balena.io/etcher/), [RosaImageWriter](http://wiki.rosalab.ru/en/index.php/ROSA_ImageWriter), [Fedora Media Writer](https://getfedora.org/en/workstation/download/), [Rufus](https://rufus.ie) 块大小为4MB的DD模式的磁盘才能正确引导.
 
 
-**Working stuff:**
-- Bootup
-- SteamOS OOBE (Steam Deck UI First Boot Experience)
-- Deck UI (separate session)
-- Deck UI (-gamepadui)
-- ~~TDP/FPS limiting~~ (*0)
-- Global FSR
-- Shader Pre-Caching
+**项目工作目标:**
+- 启动
+- SteamOS OOBE (Steam Deck UI 首次启动引导)
+- Deck UI (-桌面模式)
+- Deck UI (-游戏模式)
+- ~~TDP 控制/FPS 限制~~ (*0)
+- 全局 FSR
+- 材质预缓存
 - Switch to Desktop from plasma/to plasma without user interference.
 - Valve's exclusive *Vapor* appearance for KDE Plasma
 - Steam Deck pacman mirrors
