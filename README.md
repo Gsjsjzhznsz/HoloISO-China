@@ -5,17 +5,23 @@
 # ENGLISH Version
 Click [here](https://github.com/theVakhovskeIsTaken/holoiso) to access the English version.
 
-# HoloISO
-SteamOS 3 (Holo) archiso configuration.
+# HoloISO china
+这是一个中文本地化的分支计划！
+计划将SteamOS 3 (Holo) 从语言到安装进行本地化适配,希望可以让大家更便捷的使用上SteamOS 3 (Holo)
 
-***Yes, Gabe. SteamOS functions well on a toaster.***
 
-This project attempts to bring the Steam Deck's SteamOS Holo into a generic, installable format, and provide a close-to-official SteamOS experience.
-Main point of this project focuses in re-implementing proprietary (as in runs-only-on-deck) components that Steam client, OS itself, gamescope and user-created applications for Deck rely on.
+# HoloISO 
+SteamOS 3 (Holo) 是一个使用了ArchLinux 构建的linux系统.
 
-Click [here](https://t.me/HoloISO) to join **HoloISO** Telegram update channel;
+***是的, V社宣称,甚至在面包机上SteamOS也能够运行.***
 
-Click [here](https://steamdeck.community/forums/holoiso.29/) to visit **HoloISO** discussion on Steam Deck Community forums
+
+HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的格式。重点在于重新修改Steam客户端、OS本身、Gamescope和用户创建的Deck应用所依赖的专有组件，提供提供接近官方的SteamOS体验(就像运行在Steam Desk上)。
+
+
+点击 [这里](https://t.me/HoloISO) 加入**HoloISO**官方 Telegram更新频道;
+
+点击 [这里](https://steamdeck.community/forums/holoiso.29/) 访问Steam Deck官方社区论坛上的**HoloISO**讨论
 
 **Common Questions**
 
