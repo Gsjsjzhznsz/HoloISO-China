@@ -70,10 +70,7 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 - 支持 UEFI 启动
 - 禁用安全启动
 
-(*3)optimus是什么
-NVIDIA的双显卡的智能切换技术，这个技术的出现解决了以前的双显卡笔记本需要重启或者需要关闭所有占用GPU的程序才能切换的问题。
-这个在linux下有兼容性问题，所以最好不要是这种设备
-optimus是针对windows系统设计的，没有考虑在Linux下的兼容性，因此optimus设备想要在Linux下使用独显极其麻烦。
+(*3)optimus是 NVIDIA的 双显卡的智能切换技术，这个技术的出现解决了以前的双显卡笔记本需要重启或者需要关闭所有占用GPU的程序才能切换的问题。optimus是针对windows系统设计的，没有考虑在Linux下的兼容性，因此optimus设备想要在Linux下使用独显极其麻烦，这个在linux下有兼容性问题，所以最好不要是这种设备.
 
 **安装类型:**
 - 最低安装
