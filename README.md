@@ -54,29 +54,35 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 
 (*1) 对NVIDIA的支持仍然很不稳定。GamepadUI会滞后，但是游戏会正常运行，启动也非常随机，通常在5~10次尝试中启动.
 
-> Older GPUs won't be supported until drivers are opensourced OR Until they support atomic KMS, accelerated Xwayland, and Vulkan DMA-BUF extensions, they simply cannot function properly with HoloISO.
+> 在 NVIDIA GPUs 支持KMS、Xwayland和Vulkan DMA-BUF扩展之前，它们根本无法与HoloISO正常工作。
 
 - Intel GPUs/iGPUs 需要Gamescope降级才能引导进入SteamOS. 
 
 > 需要在安装 HoloISO 选择你的 GPU 类型. 如果遇到任何问题，请重新启动到恢复模式，键入recoveryinit，使用nmtui连接到网络并安装所需的软件包.
 
-Installation process:
+安装过程:
 -
-**Prerequistes:**
-- 4GB flash drive
-- AMD RX Vega+/APU iGPU; 4xx/5xx, 5xxx/6xxx GPU
-or Intel UHD 630+ iGPU or NVIDIA GTX 9xx+ iGPU/GPUs (preferably without Optimus [PRIME])
-- UEFI-enabled device
-- Disabled secure boot
+**最低需求:**
+- 4GB 安装U盘
+- AMD RX Vega+/APU 集成显卡; 4xx/5xx, 5xxx/6xxx 独立显卡
+  或者 英特尔 UHD 630+ 集成显卡 
+  或者 英伟达 GTX 9xx+ 集成显卡/独立显卡 (最好不要使用optimus技术[PRIME](*3) )
+- 支持 UEFI 启动
+- 禁用安全启动
 
-**Installation types:**
-- barebones 
-> An OS-only installation, resembles vanilla Arch Linux installation.
-- gameonly*
-> Steam Deck UI only (AMD GPU only; no desktop), as said, this doesn't ship any DE, and only has the Steam Deck UI installed. 
-> ****This part is currently under a renovation.***
-- deckperience
-> Full SteamOS 3 experience, Includes proper session switching, KDE Plasma + media apps, and Chromium pre-installed.
+(*3)optimus是什么
+NVIDIA的双显卡的智能切换技术，这个技术的出现解决了以前的双显卡笔记本需要重启或者需要关闭所有占用GPU的程序才能切换的问题。
+这个在linux下有兼容性问题，所以最好不要是这种设备
+optimus是针对windows系统设计的，没有考虑在Linux下的兼容性，因此optimus设备想要在Linux下使用独显极其麻烦。
+
+**安装类型:**
+- 最低安装
+> 只有桌面模式, 类似于普通的Arch Linux安装.
+- 仅游戏模式*
+> 仅Steam Deck UI(仅支持AMD GPU;没有桌面模式) 如上所述，没有安装任何DE，只有游戏模式的Steam Deck UI
+> ****这个安装类型还在修改中，目前并没有提供.***
+- 完整安装
+> 完整的SteamOS 3体验，包括会话切换，桌面模式+应用程序，和预安装的程序。
 
 **Installation:**
 - Flash the ISO from [releases](https://github.com/bhaiest/holoiso/releases/latest) or [actions](https://nightly.link/theVakhovskeIsTaken/holoiso/workflows/build/3.0/holoiso) for NVIDIA GPUs using [BalenaEtcher](https://www.balena.io/etcher/), [Rufus](https://rufus.ie) with DD mode, or by typing `sudo dd if=SteamOS.iso of=/dev/sd(your flash drive) bs=4M status=progress oflag=sync`
