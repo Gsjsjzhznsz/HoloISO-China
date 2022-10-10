@@ -33,7 +33,7 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 
 **工作目标:**
 - 启动
-- SteamOS OOBE (Steam Deck UI 首次启动引导)
+- SteamOS OOBE (Steam Deck UI 首次启动引导的欢迎界面)
 - Deck UI (-桌面模式)
 - Deck UI (-游戏模式)
 - ~~TDP 控制/FPS 限制~~ (*0)
@@ -88,7 +88,7 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 - 当出现选项时，选择安装的磁盘, 列如, `sda` 或者 `nvme0n1` 进行安装
 - 拿上你爱喝的饮料，等待安装完毕 :3
 
-Upon booting, you'll be greeted with Steam Deck's OOBE screen, from where you'll connect to your network, and login to your Steam account, from there, you can exit to KDE Plasma seamlessly by choosing *Switch to desktop* in the power menu, [like so](https://www.youtube.com/watch?v=smfwna2iHho).
+在启动时，你会看到Steam Deck的欢迎界面，从那里你将连接到你的网络，并登录到你的Steam帐户，然后你可以退出到KDE Plasma在电源菜单选择*切换到桌面*，[像这样](https://www.youtube.com/watch?v=smfwna2iHho)。
 
 截图:
 -
