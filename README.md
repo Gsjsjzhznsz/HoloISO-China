@@ -23,7 +23,7 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 
 点击 [这里](https://steamdeck.community/forums/holoiso.29/) 访问Steam Deck官方社区论坛上的**HoloISO**讨论
 
-**常见问题**
+**常见问题:**
 
 - 这是V社官方的SteamOS吗?
 > 不是, 但是已经和官方99%部分是一样的. 原代码和包直接来自Valve，没有经过任何的编辑，ISO是在官方Steam Deck恢复映像上获取的的，从QEMU实例中运行。
@@ -39,11 +39,11 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 - ~~TDP 控制/FPS 限制~~ (*0)
 - 全局 FSR
 - 材质预缓存
-- Switch to Desktop from plasma/to plasma without user interference.
+- 切换桌面模式到Plasma/到Plasma的过程无须用户干预.
 - Valve's exclusive *Vapor* appearance for KDE Plasma
 - Steam Deck pacman mirrors
-- Cool-looking neofetch?
-- System updates
+- 看起来很酷的neofetch?
+- 系统自动更新
 
 (*0) 由于Steam Deck默认的TDP功耗和GPU频率很低，特别是dGPUs，无法匹配大部分通用配置，所以被禁用
 
