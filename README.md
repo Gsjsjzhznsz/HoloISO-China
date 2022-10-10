@@ -45,7 +45,7 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 - Cool-looking neofetch?
 - System updates
 
-(*0) Disabled for ALL systems due to VERY LOW hardcoded TDP/Clock values, especially for dGPUs.
+(*0) 由于Steam Deck默认的TDP功耗和GPU频率很低，特别是dGPUs，无法匹配大部分通用配置，所以被禁用
 
 **Known issues:**
 - NVIDIA GPUs are supported after following this procedure:
