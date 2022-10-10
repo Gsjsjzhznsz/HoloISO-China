@@ -66,7 +66,7 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 - 4GB 安装U盘
 - AMD RX Vega+/APU 集成显卡; 4xx/5xx, 5xxx/6xxx 独立显卡
   或者 英特尔 UHD 630+ 集成显卡 
-  或者 英伟达 GTX 9xx+ 集成显卡/独立显卡 (最好不要使用optimus技术[PRIME](*3) )
+  或者 英伟达 GTX 9xx+ 集成显卡/独立显卡(最好不要使用optimus技术[PRIME](*3))
 - 支持 UEFI 启动
 - 禁用安全启动
 
@@ -103,12 +103,12 @@ Credits:
 -
 (Too much people xD, to be filled later!!!)
 
-Notes:
+备注:
 -
 
-This configuration includes Valve's pacman.conf repositories, `holoinstall` script and `holoinstall` post-installation binaries.
+该项目配置包括Valve的pacman.conf存储库 'holoinstall' 脚本和 'holoinstall' 安装后二进制文件
 
-This configuration builds a *releng-based ISO*, which is the default Arch Linux redistribution flavor.
+这个配置构建了一个基于*releng-based ISO*，这是Arch Linux的默认重分发版本。
 
 Building the ISO:
 -
