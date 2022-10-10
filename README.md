@@ -81,16 +81,16 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 - 完整安装
 > 完整的SteamOS 3体验，包括会话切换，桌面模式+应用程序，和预安装的程序。
 
-**Installation:**
+**安装指南:**
 - Flash the ISO from [releases](https://github.com/bhaiest/holoiso/releases/latest) or [actions](https://nightly.link/theVakhovskeIsTaken/holoiso/workflows/build/3.0/holoiso) for NVIDIA GPUs using [BalenaEtcher](https://www.balena.io/etcher/), [Rufus](https://rufus.ie) with DD mode, or by typing `sudo dd if=SteamOS.iso of=/dev/sd(your flash drive) bs=4M status=progress oflag=sync`
-- Boot into ISO
-- Run `holoinstall`
-- Enter drive node, starting from, for example, `sda` or `nvme0n1` when asked
-- Take your favourite hot beverage, and wait 'till it installs :3
+- 从 ISO 引导进入
+- 运行 `holoinstall`
+- 当出现选项时，选择安装的磁盘, 列如, `sda` 或者 `nvme0n1` 进行安装
+- 拿上你爱喝的饮料，等待安装完毕 :3
 
 Upon booting, you'll be greeted with Steam Deck's OOBE screen, from where you'll connect to your network, and login to your Steam account, from there, you can exit to KDE Plasma seamlessly by choosing *Switch to desktop* in the power menu, [like so](https://www.youtube.com/watch?v=smfwna2iHho).
 
-Screenshots:
+截图:
 -
 ![Screenshot_20220508_133916](https://user-images.githubusercontent.com/97450182/167292656-1679e007-4701-4a3c-89ee-2104b5eb12cd.png)
 ![Screenshot_20220508_133737](https://user-images.githubusercontent.com/97450182/167292672-8bc9032d-4a21-4528-ab7e-b9dbc25a0664.png)
@@ -108,7 +108,7 @@ Credits:
 
 该项目配置包括Valve的pacman.conf存储库 'holoinstall' 脚本和 'holoinstall' 安装后二进制文件
 
-这个配置构建了一个基于*releng-based ISO*，这是Arch Linux的默认重分发版本。
+该项目配置构建基于*releng-based ISO*，这是Arch Linux的默认重分发版本。
 
 Building the ISO:
 -
@@ -118,5 +118,5 @@ pacman -Sy archiso
 git clone https://github.com/bhaiest/holoiso/
 sudo mkarchiso -v holoiso
 ```
-Once it ends, your ISO will be available in the `out` folder.
+下载结束后,你的ISO文件将在 'out' 文件夹中可用。
 
