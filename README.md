@@ -40,8 +40,8 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 - 全局 FSR
 - 材质预缓存
 - 切换桌面模式到Plasma/到Plasma的过程无须用户干预.
-- Valve's exclusive *Vapor* appearance for KDE Plasma
-- Steam Deck pacman mirrors
+- Valve's 独家的 *Vapor* 外观，基于 KDE Plasma
+- Steam Deck pacman 源镜像
 - 看起来很酷的neofetch?
 - 系统自动更新
 
@@ -82,7 +82,7 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 > 完整的SteamOS 3体验，包括会话切换，桌面模式+应用程序，和预安装的程序。
 
 **安装指南:**
-- 下载ISO并且用这些软件制作 [BalenaEtcher](https://www.balena.io/etcher/), [RosaImageWriter](http://wiki.rosalab.ru/en/index.php/ROSA_ImageWriter), [Fedora Media Writer](https://getfedora.org/en/workstation/download/), [Rufus](https://rufus.ie) 块大小为4MB的DD模式的磁盘;如果你是linux `sudo dd if=SteamOS.iso of=/dev/sd(your flash drive) bs=4M status=progress oflag=sync` 
+- 下载ISO并且用这些软件制作 [BalenaEtcher](https://www.balena.io/etcher/), [RosaImageWriter](http://wiki.rosalab.ru/en/index.php/ROSA_ImageWriter), [Fedora Media Writer](https://getfedora.org/en/workstation/download/), [Rufus](https://rufus.ie) 块大小为4MB的DD模式的磁盘，如果你是linux `sudo dd if=SteamOS.iso of=/dev/sd(your flash drive) bs=4M status=progress oflag=sync` 
 - 从 ISO 引导进入
 - 运行 `holoinstall`
 - 当出现选项时，选择安装的磁盘, 列如, `sda` 或者 `nvme0n1` 进行安装
@@ -99,9 +99,6 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 ![Screenshot_20220508_134038](https://user-images.githubusercontent.com/97450182/167292734-90036b5f-2571-438e-8951-8d731cd4ae93.png)
 ![Screenshot_20220508_134051](https://user-images.githubusercontent.com/97450182/167292738-a70d266f-814d-4352-8d38-b920ae3f3381.png)
 
-Credits:
--
-(Too much people xD, to be filled later!!!)
 
 备注:
 -
@@ -110,9 +107,9 @@ Credits:
 
 该项目配置构建基于*releng-based ISO*，这是Arch Linux的默认重分发版本。
 
-Building the ISO:
+创建一个最新的ISO:
 -
-Trigger the build by executing:
+通过执行以下命令进行构建:
 ```
 pacman -Sy archiso
 git clone https://github.com/bhaiest/holoiso/
