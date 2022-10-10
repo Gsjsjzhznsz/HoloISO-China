@@ -31,7 +31,7 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 > 目前，只有在使用这些软件制作 [BalenaEtcher](https://www.balena.io/etcher/), [RosaImageWriter](http://wiki.rosalab.ru/en/index.php/ROSA_ImageWriter), [Fedora Media Writer](https://getfedora.org/en/workstation/download/), [Rufus](https://rufus.ie) 块大小为4MB的DD模式的磁盘才能正确引导.
 
 
-**项目工作目标:**
+**工作目标:**
 - 启动
 - SteamOS OOBE (Steam Deck UI 首次启动引导)
 - Deck UI (-桌面模式)
@@ -47,18 +47,18 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 
 (*0) 由于Steam Deck默认的TDP功耗和GPU频率很低，特别是dGPUs，无法匹配大部分通用配置，所以被禁用
 
-**Known issues:**
-- NVIDIA GPUs are supported after following this procedure:
+**已知问题:**
+- NVIDIA GPUs 支持须知:
 
-> Only 10xx+ GPUs are FULLY supported(*1). Although 9xx support exists in drivers, gamescope doesn't launch on it. Choose your GPU type while installing HoloISO. If you encounter any issues, reboot to recovery mode, type `recoveryinit`, connect to network using `nmtui` and install required packages.
+> 只有 10xx+ GPUs 才能完全支持(*1). 尽管驱动程序中存在 9xx 的支持, 但gamescope并未在此基础上发布. 需要在安装 HoloISO 选择你的 GPU 类型. 如果遇到任何问题，请重新启动到恢复模式，键入recoveryinit，使用nmtui连接到网络并安装所需的软件包.
 
-(*1) The NVIDIA support is still pretty wonky. GamepadUI will lag, meanwhile games will run fine, session startup is very random too, usually boots in 5/10 of attempts
+(*1) 对NVIDIA的支持仍然很不稳定。GamepadUI会滞后，但是游戏会正常运行，启动也非常随机，通常在5~10次尝试中启动.
 
 > Older GPUs won't be supported until drivers are opensourced OR Until they support atomic KMS, accelerated Xwayland, and Vulkan DMA-BUF extensions, they simply cannot function properly with HoloISO.
 
-- Intel GPUs/iGPUs require a Gamescope downgrade in order to boot into Steam Deck session. 
+- Intel GPUs/iGPUs 需要Gamescope降级才能引导进入SteamOS. 
 
-> Choose your GPU type while installing HoloISO. If you encounter any issues, reboot to recovery mode, type `recoveryinit`, connect to network using `nmtui` and install required packages.
+> 需要在安装 HoloISO 选择你的 GPU 类型. 如果遇到任何问题，请重新启动到恢复模式，键入recoveryinit，使用nmtui连接到网络并安装所需的软件包.
 
 Installation process:
 -
