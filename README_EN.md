@@ -2,8 +2,8 @@
 
 ![image](https://user-images.githubusercontent.com/97450182/167457908-07be1a60-7e86-4bef-b7f0-6bd19efd8b24.png)
 # HoloISO china
-这是一个中文本地化的分支计划
-计划将SteamOS 3 (Holo) 从语言到安装到适配,希望可以让大家更便捷的使用上SteamOS 3 (Holo)
+这是一个中文本地化的分支计划！
+计划将SteamOS 3 (Holo) 从语言到安装进行本地化适配,希望可以让大家更便捷的使用上SteamOS 3 (Holo)
 
 # HoloISO 
 SteamOS 3 (Holo) 是一个使用了ArchLinux 构建的linux系统.
