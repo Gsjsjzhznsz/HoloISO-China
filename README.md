@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/97450182/167457908-07be1a60-7e86-4bef-b7f0-6bd19efd8b24.png)
 
 # ENGLISH Version
-Click [here](https://github.com/danyi/SteamOS-holo-for-Danyi/blob/3.4/README_EN.md) to access the English version.
+Click [here](https://github.com/theVakhovskeIsTaken/holoiso) to access the English version.
 
 # HoloISO
 SteamOS 3 (Holo) archiso configuration.
