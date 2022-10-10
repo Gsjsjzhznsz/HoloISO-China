@@ -82,7 +82,7 @@ HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的
 > 完整的SteamOS 3体验，包括会话切换，桌面模式+应用程序，和预安装的程序。
 
 **安装指南:**
-- Flash the ISO from [releases](https://github.com/bhaiest/holoiso/releases/latest) or [actions](https://nightly.link/theVakhovskeIsTaken/holoiso/workflows/build/3.0/holoiso) for NVIDIA GPUs using [BalenaEtcher](https://www.balena.io/etcher/), [Rufus](https://rufus.ie) with DD mode, or by typing `sudo dd if=SteamOS.iso of=/dev/sd(your flash drive) bs=4M status=progress oflag=sync`
+- 下载ISO并且用这些软件制作 [BalenaEtcher](https://www.balena.io/etcher/), [RosaImageWriter](http://wiki.rosalab.ru/en/index.php/ROSA_ImageWriter), [Fedora Media Writer](https://getfedora.org/en/workstation/download/), [Rufus](https://rufus.ie) 块大小为4MB的DD模式的磁盘;如果你是linux `sudo dd if=SteamOS.iso of=/dev/sd(your flash drive) bs=4M status=progress oflag=sync` 
 - 从 ISO 引导进入
 - 运行 `holoinstall`
 - 当出现选项时，选择安装的磁盘, 列如, `sda` 或者 `nvme0n1` 进行安装
