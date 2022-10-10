@@ -16,19 +16,19 @@ SteamOS 3 (Holo) 是一个使用了ArchLinux 构建的linux系统.
 ***是的, V社宣称,甚至在面包机上SteamOS也能够运行.***
 
 
-HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的格式。重点在于重新修改Steam客户端、OS本身、Gamescope和用户创建的Deck应用所依赖的专有组件，提供提供接近官方的SteamOS体验(就像运行在Steam Desk上)。
+HoloISO项目，试图将Steam Desk的SteamOS Holo改为通用的、可安装的格式。重点在于重新修改Steam客户端、OS本身、Gamescope和用户创建的Deck应用所依赖的专有组件，提供提供接近官方的SteamOS体验(就像运行在Steam Desk上).
 
 
 点击 [这里](https://t.me/HoloISO) 加入**HoloISO**官方 Telegram更新频道;
 
 点击 [这里](https://steamdeck.community/forums/holoiso.29/) 访问Steam Deck官方社区论坛上的**HoloISO**讨论
 
-**Common Questions**
+**常见问题**
 
-- Is this official?
-> No, but it may as well be 99% of the way there. The code and packages, are straight from Valve, with zero possible edits, and the ISO is being built on the official Steam Deck recovery image, running inside a QEMU instance.
-- The ISO didn't boot for me, any solution?
-> Currently, the ISO only boots if flashed using [BalenaEtcher](https://www.balena.io/etcher/), [RosaImageWriter](http://wiki.rosalab.ru/en/index.php/ROSA_ImageWriter), [Fedora Media Writer](https://getfedora.org/en/workstation/download/), DD with 4MB block size, or [Rufus](https://rufus.ie) with DD mode.
+- 这是V社官方的SteamOS吗?
+> 不是, 但是已经和官方99%部分是一样的. 原代码和包直接来自Valve，没有经过任何的编辑，ISO是在官方Steam Deck恢复映像上获取的的，从QEMU实例中运行。
+- 我下载的ISO无法启动或者说无法引导?
+> 目前，只有在使用这些软件制作 [BalenaEtcher](https://www.balena.io/etcher/), [RosaImageWriter](http://wiki.rosalab.ru/en/index.php/ROSA_ImageWriter), [Fedora Media Writer](https://getfedora.org/en/workstation/download/), [Rufus](https://rufus.ie) 块大小为4MB的DD模式的磁盘才能正确引导.
 
 
 **Working stuff:**
