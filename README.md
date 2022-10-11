@@ -10,7 +10,7 @@ Click [here](https://github.com/theVakhovskeIsTaken/holoiso) to access the Engli
 
 
 # HoloISO 
-SteamOS 3 (Holo) 是一个使用了ArchLinux 构建的linux系统.
+SteamOS 3 (Holo) 是一个使用了ArchLinux 构建的系统.
 
 ***是的, V社宣称,甚至在面包机上SteamOS也能够运行.***
 
