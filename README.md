@@ -5,7 +5,7 @@
 # ENGLISH Version
 Click [here](https://github.com/theVakhovskeIsTaken/holoiso) to access the English version.
 
-# HoloISO China
+# HoloISO_chinese
 这是一个中文本地化的分支计划！
 计划将SteamOS 3 (Holo) 从语言到安装进行本地化适配,希望可以让大家更便捷的使用上SteamOS 3 (Holo)
 
