@@ -1,4 +1,4 @@
-name: Build HoloISO in Arch
+name: Build HoloISO-China
 
 on:
   workflow_dispatch:
@@ -13,9 +13,10 @@ jobs:
         run: |
           pacman -Sy --noconfirm git archiso
 
-      - name: Clone HoloISO repository
-        run: git clone https://github.com/bhaiest/holoiso/
+      - name: Clone HoloISO-China repository
+        run: git clone https://github.com/Gsjsjzhznsz/HoloISO-China.git
 
       - name: Build HoloISO
-        working-directory: holoiso
-        run: mkarchiso -v holoiso
+        run: |
+          cd HoloISO-China  # 进入克隆的目录
+          sudo mkarchiso -v .  # 使用当前目录作为参数
