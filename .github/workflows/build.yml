@@ -19,4 +19,4 @@ jobs:
       - name: Build HoloISO
         run: |
           cd HoloISO-China  # 进入克隆的目录
-          sudo mkarchiso -v .  # 使用当前目录作为参数
+          mkarchiso -v .  # 直接运行 mkarchiso，不使用 sudo
