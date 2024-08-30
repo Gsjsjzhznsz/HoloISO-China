@@ -9,8 +9,9 @@ jobs:
     container:
       image: archlinux:latest
     steps:
-      - name: Update package database and install archiso
-        run: pacman -Sy --noconfirm archiso
+      - name: Install Git and archiso
+        run: |
+          pacman -Sy --noconfirm git archiso
 
       - name: Clone HoloISO repository
         run: git clone https://github.com/bhaiest/holoiso/
