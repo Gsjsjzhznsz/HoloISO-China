@@ -1,4 +1,4 @@
-name: Build HoloISO-China
+name: Build HoloISO
 
 on:
   workflow_dispatch:
@@ -6,23 +6,21 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: archlinux:latest
-      options: --privileged  # 允许特权操作
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Install Git and archiso
         run: |
-          pacman -Sy --noconfirm git archiso
+          sudo pacman -Sy --noconfirm git archiso
 
-      - name: Clone HoloISO-China repository
-        run: git clone https://github.com/Gsjsjzhznsz/HoloISO-China.git
-
-      - name: Update pacman mirrors
+      - name: Build ISO
         run: |
-          echo 'Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-          pacman -Sy
-
-      - name: Build HoloISO
-        run: |
-          cd HoloISO-China  # 进入克隆的目录
-          mkarchiso -v .  # 直接运行 mkarchiso，不使用 sudo
+          cd HoloISO-China
+          mkarchiso -v .
+          
+      - name: Upload ISO
+        uses: actions/upload-artifact@v3
+        with:
+          name: holoiso-iso
+          path: HoloISO-China/out/*.iso
