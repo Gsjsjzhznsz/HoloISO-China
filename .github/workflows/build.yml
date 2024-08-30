@@ -17,6 +17,11 @@ jobs:
       - name: Clone HoloISO-China repository
         run: git clone https://github.com/Gsjsjzhznsz/HoloISO-China.git
 
+      - name: Update pacman mirrors
+        run: |
+          echo 'Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
+          pacman -Sy
+
       - name: Build HoloISO
         run: |
           cd HoloISO-China  # 进入克隆的目录
