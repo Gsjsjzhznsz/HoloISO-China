@@ -1,33 +1,20 @@
-name: Build ISO
+name: Build HoloISO in Arch
 
 on:
   workflow_dispatch:
-  
 
 jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: thevakhovske/holoiso:latest
-      options: --privileged
+      image: archlinux:latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Update package database and install archiso
+        run: pacman -Sy --noconfirm archiso
 
-      - name: Sanity check, if we are on SteamOS environment
-        run: |
-          cat /etc/os-release          
-      
-      - name: Install ArchISO
-        run: |
-          pacman -Sy
-          pacman --noconfirm -S git archiso
+      - name: Clone HoloISO repository
+        run: git clone https://github.com/bhaiest/holoiso/
 
-      - name: Build ISO File
-        run: |
-          mkarchiso -v .
-          find out/
-
-      - uses: actions/upload-artifact@v2
-        with:
-          name: holoiso
-          path: out/*.iso
+      - name: Build HoloISO
+        working-directory: holoiso
+        run: mkarchiso -v holoiso
