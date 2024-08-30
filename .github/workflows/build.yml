@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: archlinux:latest
+      options: --privileged  # 允许特权操作
     steps:
       - name: Install Git and archiso
         run: |
